@@ -10,42 +10,42 @@ import About from "./views/About.vue";
 
 const routes = [
     {
-        path: "/",
+        path: "/:lang",
         component: Home,
     },
 
     {
-        path: "/tours",
+        path: "/tours/:lang",
         component: Tours,
     },
 
     {
-        path: "/translation",
+        path: "/translation/:lang",
         component: Translation,
     },
 
     {
-        path: "/original_brand",
+        path: "/original_brand/:lang",
         component: OriginalBrand,
     },
 
     {
-        path: "/events_research",
+        path: "/events_research/:lang",
         component: EventsResearch,
     },
 
     {
-        path: "/gallery",
+        path: "/gallery/:lang",
         component: Gallery,
     },
 
     {
-        path: "/contact",
+        path: "/contact/:lang",
         component: Contact,
     },
 
     {
-        path: "/about",
+        path: "/about/:lang",
         component: About,
     },
 ];

@@ -9,8 +9,12 @@ module.exports = {
 
             fontFamily: {
                 nunito: "Nunito",
-                staatliches: "Staatliches",
+                opensans: "Open Sans",
             },
+
+            backgroundImage: (theme) => ({
+                hero: "url('/img/hero.jpg')",
+            }),
         },
     },
     variants: {

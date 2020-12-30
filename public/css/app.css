@@ -1,5 +1,5 @@
-@import url(https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap);
-@import url(https://fonts.googleapis.com/css2?family=Staatliches&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Nunito:wght@600;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap);
 /* tailwind */
 
 /*! modern-normalize v1.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
@@ -4256,6 +4256,10 @@ video {
 
 .bg-gradient-to-tl {
   background-image: linear-gradient(to top left, var(--tw-gradient-stops));
+}
+
+.bg-hero {
+  background-image: url(/images/hero.jpg?3ea4eee5cfd37e4b923c16358f7dc3ba);
 }
 
 .from-transparent {
@@ -11396,8 +11400,8 @@ video {
   font-family: Nunito;
 }
 
-.font-staatliches {
-  font-family: Staatliches;
+.font-opensans {
+  font-family: Open Sans;
 }
 
 .font-thin {
@@ -31434,7 +31438,7 @@ video {
 
 /* font nunito */
 
-/* font staatliches */
+/* font open sans */
 
 @media (min-width: 640px) {
   .sm\:container {
@@ -35143,6 +35147,10 @@ video {
 
   .sm\:bg-gradient-to-tl {
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
+  }
+
+  .sm\:bg-hero {
+    background-image: url(/images/hero.jpg?3ea4eee5cfd37e4b923c16358f7dc3ba);
   }
 
   .sm\:from-transparent {
@@ -42283,8 +42291,8 @@ video {
     font-family: Nunito;
   }
 
-  .sm\:font-staatliches {
-    font-family: Staatliches;
+  .sm\:font-opensans {
+    font-family: Open Sans;
   }
 
   .sm\:font-thin {
@@ -65950,6 +65958,10 @@ video {
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
   }
 
+  .md\:bg-hero {
+    background-image: url(/images/hero.jpg?3ea4eee5cfd37e4b923c16358f7dc3ba);
+  }
+
   .md\:from-transparent {
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -73088,8 +73100,8 @@ video {
     font-family: Nunito;
   }
 
-  .md\:font-staatliches {
-    font-family: Staatliches;
+  .md\:font-opensans {
+    font-family: Open Sans;
   }
 
   .md\:font-thin {
@@ -96755,6 +96767,10 @@ video {
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
   }
 
+  .lg\:bg-hero {
+    background-image: url(/images/hero.jpg?3ea4eee5cfd37e4b923c16358f7dc3ba);
+  }
+
   .lg\:from-transparent {
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -103893,8 +103909,8 @@ video {
     font-family: Nunito;
   }
 
-  .lg\:font-staatliches {
-    font-family: Staatliches;
+  .lg\:font-opensans {
+    font-family: Open Sans;
   }
 
   .lg\:font-thin {
@@ -127560,6 +127576,10 @@ video {
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
   }
 
+  .xl\:bg-hero {
+    background-image: url(/images/hero.jpg?3ea4eee5cfd37e4b923c16358f7dc3ba);
+  }
+
   .xl\:from-transparent {
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -134698,8 +134718,8 @@ video {
     font-family: Nunito;
   }
 
-  .xl\:font-staatliches {
-    font-family: Staatliches;
+  .xl\:font-opensans {
+    font-family: Open Sans;
   }
 
   .xl\:font-thin {
@@ -158365,6 +158385,10 @@ video {
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
   }
 
+  .\32xl\:bg-hero {
+    background-image: url(/images/hero.jpg?3ea4eee5cfd37e4b923c16358f7dc3ba);
+  }
+
   .\32xl\:from-transparent {
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -165503,8 +165527,8 @@ video {
     font-family: Nunito;
   }
 
-  .\32xl\:font-staatliches {
-    font-family: Staatliches;
+  .\32xl\:font-opensans {
+    font-family: Open Sans;
   }
 
   .\32xl\:font-thin {
