@@ -1,6 +1,6 @@
 <template>
     <div
-        class="pt-28 flex-col w-full text-left container px-3 mx-auto flex justify-center items-left font-opensans bg-gray-100 divide-y-2 divide-primary divide"
+        class="pt-28 flex-col w-full text-left container px-3 mx-auto flex justify-center items-left font-opensans bg-white divide-y-2 divide-primary divide"
     >
         <div class="py-4">
             <h1
@@ -29,7 +29,7 @@
                 私たちは日本とエジプトの国際空港発着のあらゆるツアーを組むことが可能です。
             </p>
             <ul
-                class="list-disc lg:pl-16 pl-8 text-gray-600"
+                class="list-disc my-4 lg:pl-16 pl-8 text-gray-600"
                 v-show="$route.params.lang == 'en'"
             >
                 <li>Custom-made tour from/to Japan.</li>
@@ -40,7 +40,7 @@
                 </li>
             </ul>
             <ul
-                class="list-disc lg:pl-16 pl-8 text-gray-600"
+                class="list-disc my-4 lg:pl-16 pl-8 text-gray-600"
                 v-show="$route.params.lang == 'jp'"
             >
                 <li>日本発着でのオーダーメイドツアー</li>
@@ -123,7 +123,7 @@
                 国内発着のモデルプラン
             </h1>
             <ul
-                class="list-disc lg:pl-16 pl-8 text-gray-600"
+                class="list-disc my-4 lg:pl-16 pl-8 text-gray-600"
                 v-show="$route.params.lang == 'en'"
             >
                 <li>
@@ -143,7 +143,7 @@
                 <li>Bahareya oasis, Siwa oasis and other desert tours.</li>
             </ul>
             <ul
-                class="list-disc lg:pl-16 pl-8 text-gray-600"
+                class="list-disc my-4 lg:pl-16 pl-8 text-gray-600"
                 v-show="$route.params.lang == 'jp'"
             >
                 <li>
@@ -186,17 +186,19 @@
             </p>
         </div>
     </div>
-    <div class="flex w-full justify-center items-start text-center py-10">
+    <div
+        class="container mx-auto flex justify-center items-start text-center py-10 bg-white"
+    >
         <router-link
             class="mx-auto lg:mx-0 bg-white text-primary font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none transform transition hover:scale-105 duration-100 ease-in-out"
-            to="/about/en"
+            to="/contact/en"
             v-show="$route.params.lang == 'en'"
         >
             Contact Us for more information
         </router-link>
         <router-link
             class="mx-auto lg:mx-0 bg-white text-primary font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none transform transition hover:scale-105 duration-100 ease-in-out"
-            to="/about/jp"
+            to="/contact/jp"
             v-show="$route.params.lang == 'jp'"
         >
             ご質問やご要望はお問い合わせください
