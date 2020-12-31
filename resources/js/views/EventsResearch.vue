@@ -65,6 +65,24 @@
             </p>
         </div>
     </div>
+    <div
+        class="container mx-auto flex justify-center items-start text-center py-10 bg-white"
+    >
+        <router-link
+            class="mx-auto lg:mx-0 bg-white text-primary font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none transform transition hover:scale-105 duration-100 ease-in-out"
+            to="/contact/en"
+            v-show="$route.params.lang == 'en'"
+        >
+            Contact Us for more information
+        </router-link>
+        <router-link
+            class="mx-auto lg:mx-0 bg-white text-primary font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none transform transition hover:scale-105 duration-100 ease-in-out"
+            to="/contact/jp"
+            v-show="$route.params.lang == 'jp'"
+        >
+            ご質問やご要望はお問い合わせください
+        </router-link>
+    </div>
 </template>
 
 <script>
