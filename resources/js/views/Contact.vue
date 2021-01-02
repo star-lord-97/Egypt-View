@@ -73,8 +73,11 @@
                         class="bg-green-200 p-2 rounded-lg"
                         v-show="state.messageSentNotification"
                     >
-                        We have received your message, and will contact you
-                        ASAP, thank you for contacting us.
+                        {{
+                            $route.params.lang == "en"
+                                ? "We have received your message, and will contact you ASAP, thank you for contacting us."
+                                : "私たちはあなたのメッセージを受け取りました、そしてできるだけ早くあなたに連絡します、私達に連絡してくれてありがとう"
+                        }}
                     </div>
                 </div>
             </div>
@@ -146,7 +149,7 @@ export default {
                     state.messageSentNotification = true;
                     setTimeout(
                         () => (state.messageSentNotification = false),
-                        1500
+                        2000
                     );
                 })
                 .catch((error) => {

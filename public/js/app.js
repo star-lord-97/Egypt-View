@@ -16369,7 +16369,7 @@ __webpack_require__.r(__webpack_exports__);
         state.messageSentNotification = true;
         setTimeout(function () {
           return state.messageSentNotification = false;
-        }, 1500);
+        }, 2000);
       })["catch"](function (error) {
         if (error.response.status === 422) {
           state.errors = error.response.data.errors;
@@ -17576,39 +17576,36 @@ var _hoisted_11 = {
   "class": "text-primary font-bold"
 };
 var _hoisted_12 = {
-  "class": "bg-green-200 p-2 rounded-lg"
-};
-var _hoisted_13 = {
   "class": "container text-left pb-4"
 };
-var _hoisted_14 = {
+var _hoisted_13 = {
   "class": "text-3xl tracking-widest font-bold font-opensans uppercase p-4"
 };
-var _hoisted_15 = {
+var _hoisted_14 = {
   "class": "text-lg font-opensans uppercase pl-4"
 };
 
-var _hoisted_16 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", {
+var _hoisted_15 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", {
   "class": "text-lg font-opensans pl-4 text-red-400"
 }, " 15 Bostan St. Taharir Cairo Egypt ", -1
 /* HOISTED */
 );
 
-var _hoisted_17 = {
+var _hoisted_16 = {
   "class": "text-lg font-opensans uppercase pl-4"
 };
 
-var _hoisted_18 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", {
+var _hoisted_17 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", {
   "class": "text-lg font-opensans pl-4 text-red-400"
 }, " info@egypt-view.com ", -1
 /* HOISTED */
 );
 
-var _hoisted_19 = {
+var _hoisted_18 = {
   "class": "text-lg font-opensans uppercase pl-4"
 };
 
-var _hoisted_20 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", {
+var _hoisted_19 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", {
   "class": "text-lg font-opensans pl-4 text-red-400"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" +201024995205 "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("br"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" 0081-03-3917-5766 "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("br"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" +201067089257 "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("br"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" +201117666373 ")], -1
 /* HOISTED */
@@ -17661,17 +17658,19 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     })
   }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$route.params.lang == "en" ? "send message" : "送信送信"), 1
   /* TEXT */
-  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_12, " We have received your message, and will contact you ASAP, thank you for contacting us. ", 512
-  /* NEED_PATCH */
-  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vShow, $setup.state.messageSentNotification]])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_13, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h1", _hoisted_14, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$route.params.lang == "en" ? "CONTACT INFO" : "連絡先"), 1
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+    "class": "bg-green-200 p-2 rounded-lg"
+  }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$route.params.lang == "en" ? "We have received your message, and will contact you ASAP, thank you for contacting us." : "私たちはあなたのメッセージを受け取りました、そしてできるだけ早くあなたに連絡します、私達に連絡してくれてありがとう"), 513
+  /* TEXT, NEED_PATCH */
+  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vShow, $setup.state.messageSentNotification]])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_12, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h1", _hoisted_13, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$route.params.lang == "en" ? "CONTACT INFO" : "連絡先"), 1
   /* TEXT */
-  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", _hoisted_15, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$route.params.lang == "en" ? "ADDRESS" : "住所"), 1
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", _hoisted_14, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$route.params.lang == "en" ? "ADDRESS" : "住所"), 1
   /* TEXT */
-  ), _hoisted_16, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", _hoisted_17, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$route.params.lang == "en" ? "EMAIL US" : "私達に電子メールを送り"), 1
+  ), _hoisted_15, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", _hoisted_16, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$route.params.lang == "en" ? "EMAIL US" : "私達に電子メールを送り"), 1
   /* TEXT */
-  ), _hoisted_18, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", _hoisted_19, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$route.params.lang == "en" ? "CALL US" : "電話"), 1
+  ), _hoisted_17, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", _hoisted_18, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$route.params.lang == "en" ? "CALL US" : "電話"), 1
   /* TEXT */
-  ), _hoisted_20])])]);
+  ), _hoisted_19])])]);
 }
 
 /***/ }),
