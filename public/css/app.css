@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css2?family=Nunito:wght@600;900&display=swap);
-@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap);
 /* tailwind */
 
 /*! modern-normalize v1.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
@@ -185484,4 +185484,3 @@ video {
     animation: bounce 1s infinite;
   }
 }
-

@@ -2,18 +2,18 @@
     <div>
         <NavBar />
         <router-view></router-view>
-        <HomeFooter />
+        <Footer />
     </div>
 </template>
 
 <script>
 import NavBar from "./views/NavBar";
-import HomeFooter from "./components/HomeFooter";
+import Footer from "./components/Footer";
 
 export default {
     components: {
         NavBar,
-        HomeFooter,
+        Footer,
     },
 };
 </script>

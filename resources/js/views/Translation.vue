@@ -5,19 +5,19 @@
         <div class="py-4">
             <h1
                 v-show="$route.params.lang == 'en'"
-                class="my-4 text-4xl leading-tight"
+                class="my-4 text-4xl leading-tight font-bold"
             >
                 Interpreting, translating, guiding, cultural mutual
                 understanding support
             </h1>
             <h1
                 v-show="$route.params.lang == 'jp'"
-                class="my-4 text-4xl leading-tight"
+                class="my-4 text-4xl leading-tight font-bold"
             >
                 通訳・翻訳・ガイド・文化相互理解サポート
             </h1>
             <ul
-                class="list-disc lg:pl-16 pl-8 text-gray-600 py-4"
+                class="list-disc lg:pl-16 pl-8 text-red-400 py-4"
                 v-show="$route.params.lang == 'en'"
             >
                 <li>Japanese / English guide</li>
@@ -26,7 +26,7 @@
                 <li>Japanese support in Egypt</li>
             </ul>
             <ul
-                class="list-disc lg:pl-16 pl-8 text-gray-600 py-4"
+                class="list-disc lg:pl-16 pl-8 text-red-400 py-4"
                 v-show="$route.params.lang == 'jp'"
             >
                 <li>・日本語/英語ガイド</li>

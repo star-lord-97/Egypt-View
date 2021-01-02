@@ -20,19 +20,19 @@
             class="fixed top-10 left-0 w-full h-full flex items-center shadow-lg overflow-y-auto"
             v-show="state.showModal"
         >
-            <div class="container mx-auto lg:px-32 rounded-lg overflow-y-auto">
-                <div class="bg-white rounded">
-                    <div class="flex justify-end pr-4 pt-2">
-                        <button
-                            class="text-3xl leading-none hover:text-gray-300 focus:outline-none"
-                            @click="state.showModal = false"
-                        >
-                            &times;
-                        </button>
-                    </div>
-                    <div class="px-8 py-8">
-                        <img :src="state.imageInModal" class="w-full h-full" />
-                    </div>
+            <div
+                class="relative container mx-auto lg:px-32 rounded-lg overflow-y-auto bg-white"
+            >
+                <div class="flex absolute justify-end right-10 pr-4 pt-2">
+                    <button
+                        class="text-3xl leading-none hover:text-gray-300 focus:outline-none"
+                        @click="state.showModal = false"
+                    >
+                        &times;
+                    </button>
+                </div>
+                <div>
+                    <img :src="state.imageInModal" class="w-full h-full" />
                 </div>
             </div>
         </div>

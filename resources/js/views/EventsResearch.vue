@@ -5,25 +5,25 @@
         <div class="py-4">
             <h1
                 v-show="$route.params.lang == 'en'"
-                class="my-4 text-4xl leading-tight"
+                class="my-4 text-4xl leading-tight font-bold"
             >
                 Events & Fairs
             </h1>
             <h1
                 v-show="$route.params.lang == 'jp'"
-                class="my-4 text-4xl leading-tight"
+                class="my-4 text-4xl leading-tight font-bold"
             >
                 イベント＆フェア
             </h1>
             <ul
-                class="list-disc my-4 lg:pl-16 pl-8 text-gray-600"
+                class="list-disc my-4 lg:pl-16 pl-8 text-red-400"
                 v-show="$route.params.lang == 'en'"
             >
                 <li>Dispatched staff from event venue arrangements.</li>
                 <li>Comprehensive support such as catering.</li>
             </ul>
             <ul
-                class="list-disc my-4 lg:pl-16 pl-8 text-gray-600"
+                class="list-disc my-4 lg:pl-16 pl-8 text-red-400"
                 v-show="$route.params.lang == 'jp'"
             >
                 <li>各種イベントの会場手配トスタッフ派遣</li>
@@ -31,13 +31,13 @@
             </ul>
             <h1
                 v-show="$route.params.lang == 'en'"
-                class="my-4 text-4xl leading-tight"
+                class="my-4 text-4xl leading-tight font-bold"
             >
                 Research & Permissions
             </h1>
             <h1
                 v-show="$route.params.lang == 'jp'"
-                class="my-4 text-4xl leading-tight"
+                class="my-4 text-4xl leading-tight font-bold"
             >
                 調査や許可申請の代行
             </h1>

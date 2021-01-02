@@ -4,13 +4,13 @@
     >
         <h1
             v-show="$route.params.lang == 'en'"
-            class="my-4 text-4xl leading-tight uppercase pb-16 font-opensans"
+            class="my-4 text-4xl leading-tight uppercase pb-16 font-opensans font-bold"
         >
             PHOTOS FROM OUR PREVIOUS JOURNEYS ALL OVER EGYPT
         </h1>
         <h1
             v-show="$route.params.lang == 'jp'"
-            class="my-4 text-4xl leading-tight uppercase pb-16 font-opensans"
+            class="my-4 text-4xl leading-tight uppercase pb-16 font-opensans font-bold"
         >
             エジプト各地の写真
         </h1>

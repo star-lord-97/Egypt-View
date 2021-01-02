@@ -5,13 +5,13 @@
         <div class="py-4">
             <h1
                 v-show="$route.params.lang == 'en'"
-                class="my-4 text-4xl leading-tight"
+                class="my-4 text-4xl leading-tight font-bold"
             >
                 International arrangement and personal travel
             </h1>
             <h1
                 v-show="$route.params.lang == 'jp'"
-                class="my-4 text-4xl leading-tight"
+                class="my-4 text-4xl leading-tight font-bold"
             >
                 国際線手配と個人旅行
             </h1>
@@ -29,7 +29,7 @@
                 私たちは日本とエジプトの国際空港発着のあらゆるツアーを組むことが可能です。
             </p>
             <ul
-                class="list-disc my-4 lg:pl-16 pl-8 text-gray-600"
+                class="list-disc my-4 lg:pl-16 pl-8 text-red-400"
                 v-show="$route.params.lang == 'en'"
             >
                 <li>Custom-made tour from/to Japan.</li>
@@ -53,13 +53,13 @@
         <div class="py-4">
             <h1
                 v-show="$route.params.lang == 'en'"
-                class="my-4 text-4xl leading-tight"
+                class="my-4 text-4xl leading-tight font-bold"
             >
                 Airport transfer and visa purchase support
             </h1>
             <h1
                 v-show="$route.params.lang == 'jp'"
-                class="my-4 text-4xl leading-tight"
+                class="my-4 text-4xl leading-tight font-bold"
             >
                 空港送迎とビザ購入サポート
             </h1>
@@ -85,13 +85,13 @@
         <div class="py-4">
             <h1
                 v-show="$route.params.lang == 'en'"
-                class="my-4 text-4xl leading-tight"
+                class="my-4 text-4xl leading-tight font-bold"
             >
                 Nile Cruise, Lake Nasser Cruise Arrangement
             </h1>
             <h1
                 v-show="$route.params.lang == 'jp'"
-                class="my-4 text-4xl leading-tight"
+                class="my-4 text-4xl leading-tight font-bold"
             >
                 ナイル川クルーズ、ナセル湖クルーズの手配
             </h1>
@@ -112,18 +112,18 @@
         <div class="py-4">
             <h1
                 v-show="$route.params.lang == 'en'"
-                class="my-4 text-4xl leading-tight"
+                class="my-4 text-4xl leading-tight font-bold"
             >
                 Model plans for domestic arrivals and departures:
             </h1>
             <h1
                 v-show="$route.params.lang == 'jp'"
-                class="my-4 text-4xl leading-tight"
+                class="my-4 text-4xl leading-tight font-bold"
             >
                 国内発着のモデルプラン
             </h1>
             <ul
-                class="list-disc my-4 lg:pl-16 pl-8 text-gray-600"
+                class="list-disc my-4 lg:pl-16 pl-8 text-red-400"
                 v-show="$route.params.lang == 'en'"
             >
                 <li>
@@ -160,13 +160,13 @@
         <div class="py-4">
             <h1
                 v-show="$route.params.lang == 'en'"
-                class="my-4 text-4xl leading-tight"
+                class="my-4 text-4xl leading-tight font-bold"
             >
                 Maniac course advice and attendance
             </h1>
             <h1
                 v-show="$route.params.lang == 'jp'"
-                class="my-4 text-4xl leading-tight"
+                class="my-4 text-4xl leading-tight font-bold"
             >
                 マニアックなコースのアドバイスとアテンド
             </h1>
