@@ -2,11 +2,13 @@ import { createRouter, createWebHistory } from "vue-router";
 import Home from "./views/Home.vue";
 import Tours from "./views/Tours.vue";
 import Translation from "./views/Translation.vue";
-import OriginalBrand from "./views/OriginalBrand.vue";
+import OriginalBrandIndex from "./views/OriginalBrand/OriginalBrandIndex.vue";
+import OriginalBrandShow from "./views/OriginalBrand/OriginalBrandShow.vue";
 import EventsResearch from "./views/EventsResearch.vue";
 import Gallery from "./views/Gallery.vue";
 import Contact from "./views/Contact.vue";
 import About from "./views/About.vue";
+import HekmatShimadzu from "./views/HekmatShimadzu.vue";
 
 const routes = [
     {
@@ -25,8 +27,13 @@ const routes = [
     },
 
     {
+        path: "/original_brand/:id/:lang",
+        component: OriginalBrandShow,
+    },
+
+    {
         path: "/original_brand/:lang",
-        component: OriginalBrand,
+        component: OriginalBrandIndex,
     },
 
     {
@@ -47,6 +54,11 @@ const routes = [
     {
         path: "/about/:lang",
         component: About,
+    },
+
+    {
+        path: "/team/hekmat_shimadzu/:lang",
+        component: HekmatShimadzu,
     },
 ];
 

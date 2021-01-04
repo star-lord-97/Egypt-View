@@ -101,7 +101,7 @@ export default {
         });
 
         onMounted(() => {
-            axios.get("http://localhost:8000/api/images").then((response) => {
+            axios.get("http://localhost:8000/api/gallery_images").then((response) => {
                 state.cairoImages = response.data[0];
                 state.luxorImages = response.data[1];
                 state.abuSimbelTemplesImages = response.data[2];

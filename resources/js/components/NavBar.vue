@@ -47,7 +47,6 @@
                     <li class="lg:mr-3">
                         <router-link
                             class="inline-block px-4 py-2 lg:rounded-full lg:border-2 border-white lg:hover:border-primary lg:hover:bg-white lg:hover:text-primary lg:bg-primary lg:text-white"
-                            to="/en"
                             :to="'/' + $route.params.lang"
                             >{{
                                 $route.params.lang == "en" ? "Home" : "ホーム"

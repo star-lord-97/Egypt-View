@@ -1,7 +1,8 @@
 <?php
 
-use App\Http\Controllers\ImageController;
+use App\Http\Controllers\GalleryImageController;
 use App\Http\Controllers\MessageController;
+use App\Http\Controllers\ProductController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -21,7 +22,12 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 // get images for the gallery
-Route::get('/images', [ImageController::class, 'index']);
+Route::get('/gallery_images', [GalleryImageController::class, 'index']);
+
+// get all products for the store
+Route::get('/products', [ProductController::class, 'index']);
+// get one products for the store
+Route::get('/products/{product:id}', [ProductController::class, 'show']);
 
 // store messages as a user
 Route::post('/message', [MessageController::class, 'store']);
