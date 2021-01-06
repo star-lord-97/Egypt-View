@@ -50,22 +50,22 @@
 </template>
 
 <script>
-import axios from "axios";
+import store from "../../store";
 import { onBeforeMount, onMounted, reactive } from "vue";
 import { useRoute } from "vue-router";
 
 export default {
     setup() {
+        const route = useRoute();
+
         const state = reactive({
             product: {},
             currentImageSource: null,
         });
 
         onBeforeMount(() => {
-            axios
-                .get(
-                    "http://localhost:8000/api/products/" + useRoute().params.id
-                )
+            store
+                .dispatch("getOneProduct", { id: route.params.id })
                 .then((response) => {
                     state.product = response.data;
                     state.currentImageSource =

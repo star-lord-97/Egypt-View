@@ -122,7 +122,7 @@
 
 <script>
 import { reactive } from "vue";
-import axios from "axios";
+import store from "../store";
 
 export default {
     setup() {
@@ -139,9 +139,9 @@ export default {
         });
 
         let sendMessageHandler = () => {
-            axios
-                .post("http://localhost:8000/api/message", state.message)
-                .then(() => {
+            store
+                .dispatch("storeMessage", { message: state.message })
+                .then((response) => {
                     state.message.name = "";
                     state.message.email = "";
                     state.message.message = "";

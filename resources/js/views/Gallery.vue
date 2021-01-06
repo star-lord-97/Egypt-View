@@ -80,7 +80,7 @@
 
 <script>
 import { onMounted, reactive } from "vue";
-import axios from "axios";
+import store from "../store";
 import GalleryImages from "../components/GalleryImages";
 
 export default {
@@ -101,7 +101,7 @@ export default {
         });
 
         onMounted(() => {
-            axios.get("http://localhost:8000/api/gallery_images").then((response) => {
+            store.dispatch("getGalleryImages").then((response) => {
                 state.cairoImages = response.data[0];
                 state.luxorImages = response.data[1];
                 state.abuSimbelTemplesImages = response.data[2];

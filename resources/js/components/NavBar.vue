@@ -148,6 +148,60 @@
                             }}
                         </router-link>
                     </li>
+                    <li v-if="isLoggedIn" class="lg:mr-3 group inline-block">
+                        <button
+                            class="flex items-center px-4 py-2 lg:rounded-full lg:border-2 border-white lg:hover:border-primary lg:hover:bg-white lg:hover:text-primary lg:bg-primary lg:text-white cursor-default focus:outline-none"
+                        >
+                            <span class="mr-2"
+                                >{{
+                                    $route.params.lang == "en"
+                                        ? "Admin"
+                                        : "管理者"
+                                }}
+                            </span>
+                            <svg
+                                class="fill-current h-5 w-5"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 20 20"
+                            >
+                                <path
+                                    d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                                />
+                            </svg>
+                        </button>
+                        <div
+                            class="lg:absolute pt-1 hidden group-hover:block lg:text-xl text-md tracking-normal bg-white lg:rounded-lg"
+                        >
+                            <router-link
+                                :to="'/products/' + $route.params.lang"
+                                class="lg:flex block lg:justify-center ml-4 lg:ml-0 px-2 lg:py-2 py-0 lg:hover:bg-primary lg:hover:text-white"
+                                >{{
+                                    $route.params.lang == "en"
+                                        ? "Products"
+                                        : "製品"
+                                }}
+                            </router-link>
+                            <router-link
+                                :to="'/messages/' + $route.params.lang"
+                                class="lg:flex block lg:justify-center ml-4 lg:ml-0 px-2 lg:py-2 py-0 lg:hover:bg-primary lg:hover:text-white"
+                                >{{
+                                    $route.params.lang == "en"
+                                        ? "Messages"
+                                        : "メッセージ"
+                                }}
+                            </router-link>
+                            <button
+                                class="lg:flex block lg:justify-center ml-4 lg:ml-0 px-2 lg:py-2 py-0 lg:hover:bg-primary lg:hover:text-white"
+                                @click="logOutHandler()"
+                            >
+                                {{
+                                    $route.params.lang == "en"
+                                        ? "Logout"
+                                        : "ログアウト"
+                                }}
+                            </button>
+                        </div>
+                    </li>
                     <li>
                         <button
                             class="px-4 focus:outline-none text-lg font-opensans font-extrabold"
@@ -182,7 +236,8 @@
 </template>
 
 <script>
-import { onMounted, reactive } from "vue";
+import { onMounted, reactive, computed } from "vue";
+import store from "../store";
 
 export default {
     setup() {
@@ -190,7 +245,24 @@ export default {
             hideMobileMenu: true,
         });
 
-        return { state };
+        let logOutHandler = () => {
+            store
+                .dispatch("logout")
+                .then((response) => {
+                    localStorage.removeItem("adminToken");
+                    store.commit("clearAdminToken");
+                })
+                .catch((error) => {
+                    localStorage.removeItem("adminToken");
+                    store.commit("clearAdminToken");
+                });
+        };
+
+        const isLoggedIn = computed(() => {
+            return store.getters.isLoggedIn;
+        });
+
+        return { state, logOutHandler, isLoggedIn };
     },
 };
 </script>

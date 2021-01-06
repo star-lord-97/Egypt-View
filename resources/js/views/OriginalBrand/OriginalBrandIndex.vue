@@ -22,7 +22,7 @@
 </template>
 
 <script>
-import axios from "axios";
+import store from "../../store";
 import { onMounted, reactive } from "vue";
 
 export default {
@@ -32,7 +32,7 @@ export default {
         });
 
         onMounted(() => {
-            axios.get("http://localhost:8000/api/products").then((response) => {
+            store.dispatch("getAllProducts").then((response) => {
                 state.products = response.data;
             });
         });
