@@ -1,5 +1,5 @@
 <template>
-    <div class="pt-28 w-3/5 mx-auto">
+    <div class="pt-20 lg:pt-28 w-3/5 mx-auto">
         <div class="lg:grid grid-cols-3 gap-4 my-8">
             <router-link
                 v-for="product in state.products"

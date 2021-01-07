@@ -15,25 +15,25 @@
                 @click="state.showModal = true"
             />
         </div>
+    </div>
+    <div
+        style="background-color: rgba(0, 0, 0, 0.5)"
+        class="fixed top-10 left-0 w-full h-full flex items-center shadow-lg overflow-y-auto"
+        v-show="state.showModal"
+    >
         <div
-            style="background-color: rgba(0, 0, 0, 0.5)"
-            class="fixed top-10 left-0 w-full h-full flex items-center shadow-lg overflow-y-auto"
-            v-show="state.showModal"
+            class="relative container mx-auto lg:px-32 rounded-lg overflow-y-auto bg-white"
         >
-            <div
-                class="relative container mx-auto lg:px-32 rounded-lg overflow-y-auto bg-white"
-            >
-                <div class="flex absolute justify-end right-10 pr-4 pt-2">
-                    <button
-                        class="text-3xl leading-none hover:text-gray-300 focus:outline-none"
-                        @click="state.showModal = false"
-                    >
-                        &times;
-                    </button>
-                </div>
-                <div>
-                    <img :src="state.imageInModal" class="w-full h-full" />
-                </div>
+            <div class="flex absolute justify-end right-10 pr-4 pt-2">
+                <button
+                    class="text-3xl leading-none hover:text-gray-300 focus:outline-none text-primary"
+                    @click="state.showModal = false"
+                >
+                    &times;
+                </button>
+            </div>
+            <div>
+                <img :src="state.imageInModal" class="w-full h-full" />
             </div>
         </div>
     </div>

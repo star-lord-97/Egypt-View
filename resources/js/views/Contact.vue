@@ -1,5 +1,5 @@
 <template>
-    <div class="pt-28 container mx-auto">
+    <div class="pt-20 lg:pt-28 container mx-auto">
         <div class="lg:grid grid-cols-3 gap-4">
             <div class="lg:col-span-2 container text-left pb-4">
                 <h1

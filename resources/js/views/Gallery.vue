@@ -1,6 +1,6 @@
 <template>
     <div
-        class="pt-28 flex-col w-full text-center container mx-auto flex justify-center items-center bg-white"
+        class="pt-20 lg:pt-28 flex-col w-full text-center container mx-auto flex justify-center items-center bg-white"
     >
         <h1
             class="my-4 text-4xl leading-tight uppercase pb-16 font-opensans font-bold"

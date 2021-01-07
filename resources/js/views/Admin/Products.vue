@@ -1,5 +1,5 @@
 <template>
-    <div class="pt-28">Products</div>
+    <div class="pt-20 lg:pt-28">Products</div>
 </template>
 
 <script>

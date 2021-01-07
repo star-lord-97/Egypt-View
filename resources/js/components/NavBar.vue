@@ -238,9 +238,13 @@
 <script>
 import { onMounted, reactive, computed } from "vue";
 import store from "../store";
+import { useRouter, useRoute } from "vue-router";
 
 export default {
     setup() {
+        const router = useRouter();
+        const route = useRoute();
+
         const state = reactive({
             hideMobileMenu: true,
         });
@@ -251,10 +255,12 @@ export default {
                 .then((response) => {
                     localStorage.removeItem("adminToken");
                     store.commit("clearAdminToken");
+                    router.push({ path: "/" + route.params.lang });
                 })
                 .catch((error) => {
                     localStorage.removeItem("adminToken");
                     store.commit("clearAdminToken");
+                    router.push({ path: "/" + route.params.lang });
                 });
         };
 

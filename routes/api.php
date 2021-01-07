@@ -36,4 +36,6 @@ Route::get('/products', [ProductController::class, 'index']);
 Route::get('/products/{product:id}', [ProductController::class, 'show']);
 
 // store messages as a user
-Route::post('/message', [MessageController::class, 'store']);
+Route::post('/messages', [MessageController::class, 'store']);
+// get all messages as an admin
+Route::get('/messages', [MessageController::class, 'index'])->middleware('auth:api');

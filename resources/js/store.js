@@ -68,7 +68,22 @@ export default createStore({
         storeMessage(context, payload) {
             return new Promise((resolve, reject) => {
                 axios
-                    .post(context.state.api_url + "message", payload.message)
+                    .post(context.state.api_url + "messages", payload.message)
+                    .then((response) => {
+                        resolve(response);
+                    })
+                    .catch((error) => {
+                        reject(error);
+                    });
+            });
+        },
+
+        getAllMessages(context) {
+            return new Promise((resolve, reject) => {
+                axios.defaults.headers.common["Authorization"] =
+                    "Bearer " + context.state.adminToken;
+                axios
+                    .get(context.state.api_url + "messages")
                     .then((response) => {
                         resolve(response);
                     })

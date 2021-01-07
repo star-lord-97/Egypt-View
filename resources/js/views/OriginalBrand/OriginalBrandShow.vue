@@ -1,5 +1,5 @@
 <template>
-    <div class="pt-28 w-3/5 mx-auto">
+    <div class="pt-20 lg:pt-28 w-3/5 mx-auto">
         <div class="lg:flex justify-around my-8">
             <div>
                 <div>
