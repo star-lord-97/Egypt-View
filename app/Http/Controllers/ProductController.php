@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Product;
+use App\Models\ProductImage;
 use Illuminate\Http\Request;
 
 class ProductController extends Controller
@@ -14,7 +15,7 @@ class ProductController extends Controller
      */
     public function index()
     {
-        $products = Product::with('primaryProductImages')->get();
+        $products = Product::with('productImages', 'primaryProductImages')->get();
         return $products;
     }
 
@@ -36,7 +37,23 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $productAttributes = $request->validate([
+            'title' => 'required|string|max:255',
+            'details' => 'required|string',
+            'price' => 'required',
+        ]);
+
+        $newProduct = Product::create($productAttributes);
+
+        $request->validate([
+            'image' => 'file|required',
+        ]);
+
+        ProductImage::create([
+            'path' => $request->image->store('productsImages'),
+            'product_id' => $newProduct->id,
+            'primary' => true
+        ]);
     }
 
     /**
@@ -72,7 +89,13 @@ class ProductController extends Controller
      */
     public function update(Request $request, Product $product)
     {
-        //
+        $attributes = $request->validate([
+            'title' => 'required|string|max:255',
+            'details' => 'required|string',
+            'price' => 'required',
+        ]);
+
+        $product->update($attributes);
     }
 
     /**
@@ -83,6 +106,6 @@ class ProductController extends Controller
      */
     public function destroy(Product $product)
     {
-        //
+        $product->delete();
     }
 }
