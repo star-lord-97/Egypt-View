@@ -18891,7 +18891,10 @@ var _hoisted_12 = {
   "class": "text-center py-3 flex flex-row justify-center"
 };
 var _hoisted_13 = {
-  "class": "container mx-auto flex justify-center"
+  "class": "pt-20 lg:pt-28 container mx-auto my-8 lg:hidden flex justify-center"
+};
+var _hoisted_14 = {
+  "class": "container mx-auto hidden lg:flex justify-center"
 };
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_AdminProductDetails = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("AdminProductDetails");
@@ -18924,7 +18927,9 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     , ["product"])])])]);
   }), 256
   /* UNKEYED_FRAGMENT */
-  ))])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div\r\n        class=\"pt-20 lg:pt-28 container mx-auto my-8 lg:hidden flex justify-center\"\r\n    >\r\n        <table class=\"w-full\">\r\n            <thead class=\"bg-gray-800 text-white\">\r\n                <tr>\r\n                    <th\r\n                        class=\"text-center py-3 uppercase font-semibold text-sm\"\r\n                    >\r\n                        {{\r\n                            $route.params.lang == \"en\"\r\n                                ? \"Message\"\r\n                                : \"メッセージ\"\r\n                        }}\r\n                    </th>\r\n                </tr>\r\n            </thead>\r\n            <tbody v-for=\"message in state.messages\" class=\"text-gray-700\">\r\n                <tr>\r\n                    <td class=\"text-center py-3\">\r\n                        <AdminMessages :message=\"message\" />\r\n                    </td>\r\n                </tr>\r\n            </tbody>\r\n        </table>\r\n    </div> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_13, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_AdminAddProduct)])], 64
+  ))])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_13, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h1", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$route.params.lang == "en" ? "Available only on large devices" : "大型デバイスでのみ使用可能"), 1
+  /* TEXT */
+  )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_14, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_AdminAddProduct)])], 64
   /* STABLE_FRAGMENT */
   );
 }

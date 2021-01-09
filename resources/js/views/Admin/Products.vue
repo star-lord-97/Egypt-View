@@ -45,33 +45,18 @@
             </tbody>
         </table>
     </div>
-    <!-- <div
+    <div
         class="pt-20 lg:pt-28 container mx-auto my-8 lg:hidden flex justify-center"
     >
-        <table class="w-full">
-            <thead class="bg-gray-800 text-white">
-                <tr>
-                    <th
-                        class="text-center py-3 uppercase font-semibold text-sm"
-                    >
-                        {{
-                            $route.params.lang == "en"
-                                ? "Message"
-                                : "メッセージ"
-                        }}
-                    </th>
-                </tr>
-            </thead>
-            <tbody v-for="message in state.messages" class="text-gray-700">
-                <tr>
-                    <td class="text-center py-3">
-                        <AdminMessages :message="message" />
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </div> -->
-    <div class="container mx-auto flex justify-center">
+        <h1>
+            {{
+                $route.params.lang == "en"
+                    ? "Available only on large devices"
+                    : "大型デバイスでのみ使用可能"
+            }}
+        </h1>
+    </div>
+    <div class="container mx-auto hidden lg:flex justify-center">
         <AdminAddProduct />
     </div>
 </template>
