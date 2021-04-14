@@ -47,7 +47,7 @@
     >
         <router-link
             class="mx-auto lg:mx-0 bg-white text-primary font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none transform transition hover:scale-105 duration-100 ease-in-out"
-            :to="'/contant/' + $route.params.lang"
+            :to="'/contact/' + $route.params.lang"
         >
             {{
                 $route.params.lang == "en"
